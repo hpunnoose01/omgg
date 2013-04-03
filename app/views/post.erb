@@ -1,0 +1,6 @@
+<p>Subject: <%= @post.subject %></p>
+<p>Description: <%= @post.description %></p>
+<p>Price: <%= @post.price %></p>
+<p>Email: <%= @post.email %></p>
+<p>Created: <%= @post.created_at %></p>
+<p><%= "<a href='/edit/#{@post.key}'>This is your edit link</a>" if @key %></p>

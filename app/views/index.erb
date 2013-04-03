@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Craigslist, Jr.</h1>
+  <p>Hello, world!</p>
+
+<table>
+<p>Categories</p>
+<% @categories.each do |category| %>
+  <tr><td><a href="/categories/<%= category %>"><%= category %></a></td></tr>
+<% end %>
+
+</table>
+
+</div>

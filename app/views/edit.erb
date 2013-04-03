@@ -1,0 +1,16 @@
+
+<br>
+post id: <%= @post_id.id %><br><br>
+
+
+
+<form action="/update" name="new_post_form" method="post">
+<input type="hidden" name="id" value="<%= @post_id.id %>">
+Subject: <input type="text" name="subject" value="<%= @post_id.subject %>"><br>
+Description: <textarea name="description"><%= @post_id.description %></textarea><br>
+Price: <input type="text" name="price" value="<%= @post_id.price %>"><br>
+Email: <input type="text" name="email" value="<%= @post_id.email %>"><br>
+<input type="hidden" name="cat_id" value="<%= @post_id.category_id %>" ><br>
+<input type="hidden" name="key" value="<%= @post_id.key %>" ><br>
+<input type="submit" value="submit">
+</form>

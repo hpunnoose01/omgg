@@ -1,0 +1,10 @@
+<p><%= @category_name %></p>
+
+<a href="/create_post/<%= @category_id %>">create post</a><br><br>
+
+<table>
+<% @posts.each do |post| %>
+<tr><td><a href="/post/<%= post.id %>"><%= post.subject %></a></td></tr>
+<% end %>
+
+
