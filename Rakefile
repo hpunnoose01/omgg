@@ -57,6 +57,9 @@ namespace :generate do
     end
   end
 
+
+
+
   desc "Create an empty model spec in spec, e.g., rake generate:spec NAME=user"
   task :spec do
     unless ENV.has_key?('NAME')

@@ -7,7 +7,7 @@ class CreateCraigslist < ActiveRecord::Migration
     end
 
     create_table(:posts) do |post|
-          post.string :subject, :description, :email
+          post.string :subject, :description, :email, :key
           post.integer :price, :category_id
           post.timestamps
 
